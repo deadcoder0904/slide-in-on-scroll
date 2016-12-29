@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.3em;
+	background: rgba(15, 0, 68, 0.82);
+}
+
+header {
+	font-size: 3em;
+	text-align: center;
+}
+
+img {
+	width: 25em;
+	height: 25em;
+}
+
+.main {
+	margin: 50px auto;
+	width: 50em;
+	background: aquamarine;
+	padding: 2em;
+}
+
+p {
+	line-height: 2em;
+}
+
+img {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+#para1 img, #para3 img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.slideLeft {
+	transform: translateX(-30%) scale(0.85);
+}
+
+.slideRight {
+	transform: translateX(30%) scale(0.85);
+}
+
+#para1 p, #para3 p {
+	text-align: justify;
+	text-indent: 2em;
+}
+
+#para2 img {
+	float: right;
+	margin: 20px 0 0 20px;
+}
+
+#para2 p {
+	text-align: justify;
+	text-indent: 2em;
+}
+
+.active {
+	opacity: 1;
+	transform: translateX(0%) scale(1);
+}
